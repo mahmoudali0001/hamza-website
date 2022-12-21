@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    
+    
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/dist.css" />
+    
+    <title>Hamdza | Home</title>
+  </head>
+  <body class="font-cairo">
+    <img
+      src="./assets/image/sam-ueGaQiHV86o-unsplash.png"
+      class="absolute z-[-5] top-0 w-full h-full left-0"
+    />
+
+    <!--------------------------------------------------------------- Start NavBar --------------------------------------------------------->
+    <div
+      id="overlay"
+      class=" top-0 left-0 w-full h-full z-[25] bg-gray-100/70 hidden fixed"
+    ></div>
+    <nav class="shadow px-1 fixed w-full bg-main text-main z-30">
+      <section
+        class="
+          container
+          |
+          m-auto
+          |
+          text-center
+          |
+          flex
+          justify-around
+          xxl:h-[173px]
+          xl:h-[150px]
+          lg:h-[100px]
+          md:h-[90px]
+          h-[60px]
+        "
+      >
+        <article class="pointer xl:w-[230px] lg:w-[200px]  w-[180px] relative ">
+          <img src="./assets/image/Final Logo-01-01.png" alt="" class=" rounded-[20px]  xl:w-full lg:w-[90%] md:w-[60%] w-[40%] absolute top-0 left-0">
+        </article>
+
+        <article
+          id="menu-btn"
+          class="
+            w-8
+            |
+            lg:hidden
+            lg:py-0
+            |
+            py-4
+            |
+            flex flex-col
+            justify-center
+            gap-1
+            |
+            z-50
+            |
+            relative
+            left-0
+            |
+            ease-in-out
+            duration-500
+          "
+           style="align-items: flex-start;" 
+        >
+          <span
+            class="w-1/4 py-0.5 block bg-sec ease-in-out duration-700"
+          ></span>
+          <span class="w-full py-0.5 bg-sec"></span>
+          <span class="w-3/4 py-0.5 bg-sec ease-in-out duration-700"></span>
+        </article>
+
+        <ul
+          id="navbar-menu"
+          class="
+            absolute
+            lg:relative
+            top-0
+            lg:right-0
+            -right-20
+            xl:gap-x-6
+            lg:gap-x-4
+            |
+            hidden
+            lg:flex
+            flex-col
+            lg:flex-row
+            lg:justify-center
+            items-center
+            |
+            w-0
+            h-screen
+            lg:h-full
+            lg:w-full
+            |
+            pt-20
+            lg:pt-0
+            |
+            shadow-md
+            lg:shadow-none
+            |
+            bg-white
+            lg:bg-transparent
+            |
+            ease-in-out
+            duration-500
+            |
+            z-[41]
+          "
+        >
+          <li class="link-item active">
+            <a class="nav-btn" href="#">HOME</a>
+          </li>
+          <li class="link-item animation-delay-200">
+            <a class="nav-btn" href="#"
+              >PROJECTS <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li class="link-item animation-delay-400">
+            <a class="nav-btn" href="#"
+              >PURPOSE <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li class="link-item animation-delay-600">
+            <a class="nav-btn" href="#">AREAS</a>
+          </li>
+          <li class="link-item animation-delay-800">
+            <a class="nav-btn" href="#"
+              >DEVELOPERS <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li class="link-item animation-delay-1000">
+            <a class="nav-btn" href="#">ABOUT</a>
+          </li>
+
+          <li class="link-item animation-delay-1200">
+            <a class="nav-btn" href="#">CONTACT</a>
+          </li>
+
+          <li
+            class="
+              link-item
+              animation-delay-1200
+              bg-white
+              rounded-xl
+              2xl:px-[26px]
+              xl:px-[22px]
+              lg:px-[20px]
+              px-[26px]
+              2xl:py-[9px]
+              xl:py-[7px]
+              lg:py-[5px]
+              py-[9px]
+              cursor-pointer
+            "
+          >
+            <a class="flex flex-row gap-x-2 justify-center items-center">
+              <img src="./assets/image/whatsapp.png" alt="">
+              <span class="font-bold text-black 2xl:text-[18px] xl:text-[16px] lg:text-[14px] text-[18px]">WHATSAPP</span>
+            </a>
+          </li>
+
+          <li class="link-item animation-delay-1400 lg:text-white text-black">
+            <a class="nav-btn-lang" href="#">AR</a>
+          </li>
+
+          <li class="link-item animation-delay-1600">
+            <a class="nav-btn-lang" href="#">EN</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <!--------------------------------------------------------------- End NavBar --------------------------------------------------------->
+
+    <!--------------------------------------------------------------- Start  Header --------------------------------------------------------->
+    <div class="swiper mySwiper lg:h-screen h-[500px] ">
+      <div class="swiper-wrapper">
+        <article class="slide swiper-slide w-full" style="background: transparent;">
+          <img
+            src="./assets/image/Slider.png"
+            class="w-full h-full"
+          />
+          <div
+            class="absolute top-0 left-0 w-full h-full bg-[#33333342] z-0"
+          ></div>
+
+          <div
+            class="
+              slide-text-parent
+            "
+          >
+            <div style="line-height: 0.6;">THE</div>
+            <div style="margin-right: 18px;">LUXURY LIFE</div>
+          </div>
+
+          <div class="lg:w-[65%] w-1/2 bg-main xxl:h-56 xl:h-48 lg:h-40 h-64 absolute xxl:bottom-[80px] lg:bottom-[60px] bottom-[10px] ">
+            <div
+              class="
+                h-full
+                |
+                flex
+                lg:flex-row
+                xxl:gap-x-16
+                xl:gap-x-12
+                lg:gap-x-8
+                gap-y-2
+                flex-col
+                lg:justify-center
+                items-center
+                |
+                px-1
+                |
+                text-white
+              "
+            >
+              <div class="flex gap-2 flex-col items-start  xxl:w-[230px] xl:w-[150px]">
+                <label for="Name" class="xl:text-[16px] lg:text-[15px] md:text-[14px] text-[12px] font-bold xl:leading-[1.9] leading-[1]">Name</label>
+                <input type="text" class="input " />
+              </div>
+
+              <div class="flex gap-3 flex-col items-start relative  xxl:w-[230px] lg:w-[191px]  leading-[1]">
+                <label for="Name" class="xl:text-[16px] lg:text-[15px] md:text-[14px] text-[12px] font-bold xl:leading-[1.9]">Phone number</label>
+                <div class="absolute bottom-0 left-0 inline-block">
+                  <img
+                    src="./assets/image/egypt.png"
+                    alt=""
+                    class="w-5 h-5 inline-block"
+                  />
+                  <span>|</span>
+                  <span class="text-[14px]">+2</span>
+                </div>
+                <input type="text" class="input pl-[52px] text-sm" />
+              </div>
+
+              <div class="flex gap-2 flex-col items-start  xxl:w-[230px]   leading-[1]">
+                <label for="Name" class="xl:text-[16px] lg:text-[15px] md:text-[14px] text-[12px] font-bold xl:leading-[1.9]">Preferred Location</label>
+                <select name="location" id="" class="lg:w-[191px] text-sm input">
+                  <option value="new cairo">New Cairo</option>
+                  <option value="october">October</option>
+                  <option value="giza">Giza</option>
+                </select>
+              </div>
+
+              <div class="flex gap-2 flex-col items-start xxl:w-[230px] xl:w-[150px] xxl:leading-[1.9]  leading-[1]">
+                <label for="Name" class="xl:text-[16px] lg:text-[15px] md:text-[14px] text-[12px] font-bold">Message</label>
+                <input type="text" class="input" />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide w-full" style="background: transparent;">
+          <img
+            src="./assets/image/Slider.png"
+            class="w-full h-full"
+          />
+          <div
+            class="absolute top-0 left-0 w-full h-full bg-[#33333342] z-0"
+          ></div>
+
+          <div
+            class="
+              slide-text-parent
+            "
+          >
+            <div>THE</div>
+            <div>LUXURY LIFE</div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide w-full" style="background: transparent;">
+          <img
+            src="./assets/image/Slider.png"
+            class="w-full h-full"
+          />
+          <div
+            class="absolute top-0 left-0 w-full h-full bg-[#33333342] z-0"
+          ></div>
+
+          <div
+            class="
+              slide-text-parent
+            "
+          >
+            <div>THE</div>
+            <div>LUXURY LIFE</div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide w-full" style="background: transparent;">
+          <img
+            src="./assets/image/Slider.png"
+            class="w-full h-full "
+          />
+          <div
+            class="absolute top-0 left-0 w-full h-full bg-[#33333342] z-0"
+          ></div>
+
+          <div
+            class="
+              slide-text-parent
+            "
+          >
+            <div>THE</div>
+            <div>LUXURY LIFE</div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide w-full" style="background: transparent;">
+          <img
+            src="./assets/image/Slider.png"
+            class="w-full h-full "
+          />
+          <div
+            class="absolute top-0 left-0 w-full h-full bg-[#33333342] z-0"
+          ></div>
+
+          <div
+            class="
+              slide-text-parent
+            "
+          >
+            <div>THE</div>
+            <div>LUXURY LIFE</div>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-button-next xl:right-12 lg:right-9 md:right-5 right-2"></div>
+      <div class="swiper-button-prev xl:left-12 lg:left-9 md:left-5 left-2"></div>
+    </div>
+    <!--------------------------------------------------------------- End  Header --------------------------------------------------------->
+
+    <!------------------------------------------------------------- Start PROPOUSE --------------------------------------------------------->
+    <section class="relative lg:h-screen text-white overflow-hidden">
+      <section class=" | m-auto | flex justify-around h-full px-20 py-16">
+        <img
+          src="./assets/image/Rectangle 152.png"
+          alt=""
+          class="absolute top-0 z-[-2] left-0 w-full h-[120vh]"
+        />
+        <div
+          class="bg-[#2d40149e] absolute top-0 z-[-1] left-0 w-full h-full"
+        ></div>
+
+        <section
+          class="
+            flex
+            lg:flex-row
+            flex-col
+            gap-9
+            w-full
+            h-full
+            items-center
+            justify-center
+          "
+        >
+          <section class="lg:w-[60%] lg:text-left text-center relative">
+            <h2 class="xxl:text-[60px] xl:text-[55px] lg:text-[50px] text-[45px] font-extrabold leading-[1] ">WHAT WE PROPOUSE</h2>
+            <h5 class="font-bold text-xl">What we’re good at</h5>
+            <hr class="lg:w-3/4 w-full" />
+
+            <div class="">
+              
+            </div>
+
+            </div>
+          </section>
+
+          <section class="relative lg:w-[40%] lg:text-start text-center">
+            <img
+              src="./assets/image/Untitled-3-02.png"
+              alt=""
+              class="
+              absolute 
+              xl:top-[-250px]
+              lg:top-[0px]
+              top-[-20px]
+              right-0
+              |
+              z-0
+              opacity-25 
+              xl:w-[1100px] xl:h-[850px]
+              lg:w-[800px] lg:h-[500px]
+              w-[700px] h-[500px]
+              "
+            />
+
+            <article class="z-10 relative flex gap-y-9 flex-col">
+              <div class="w-full">
+                <h2 class="xxl:text-[66px] xl:text-[56px] lg:text-[46px] text-[40px] leading-[0.8] font-extrabold">COMMERCIAL</h2>
+                <h6 class="text-[33px]">Test for preview</h6>
+                <hr class=" w-full" />
+              </div>
+
+              <div class="w-full">
+                <h2 class="xxl:text-[66px] xl:text-[56px] lg:text-[46px] text-[40px] leading-[0.8] font-bold">RESIDENTIAL</h2>
+                <h6 class="text-[33px]">Test for preview</h6>
+                <hr class=" w-full" />
+              </div>
+
+              <div class="w-full">
+                <h2 class="xxl:text-[66px] xl:text-[56px] lg:text-[46px] text-[40px] leading-[0.8] font-bold">ADMINSTARATIVE</h2>
+                <h6 class="text-[33px]">Test for preview</h6>
+                <hr class=" w-full" />
+              </div>
+
+              <div class="w-full">
+                <h2 class="xxl:text-[66px] xl:text-[56px] lg:text-[46px] text-[40px] leading-[0.8] font-bold">COADSTAL</h2>
+                <h6 class="text-[33px]">Test for preview</h6>
+                <hr class=" w-full" />
+              </div>
+            </article>
+          </section>
+        </section>
+    </section>
+    <!------------------------------------------------------------- End PROPOUSE --------------------------------------------------------->
+
+    <!------------------------------------------------------------- Start WHY HAMZA --------------------------------------------------------->
+    <section class="bg-[#EBEFEA] py-20 relative xxl:w-full">
+      <section
+        class="
+          |
+          m-auto
+          |
+          text-center
+          |
+          flex
+          justify-around
+          xxl:items-start
+          items-center
+          flex-row
+          
+          gap-x-8
+        "
+      >
+        <div class="xl:w-3/5 w-3/4 xxl:mb-1 mb-5">
+          <img
+            src="./assets/image/Rectangle 213.png"
+            class="rounded-tl-[60px] rounded-md"
+          />
+        </div>
+
+        <div class="flex flex-col gap-y-4  lg:px-0 px-5">
+          <div
+            class="
+              border
+              pb-5
+              border-b-4 border-t-0 border-l-0 border-r-0 border-[#2D4010]
+              mb-7
+            "
+          >
+            <h2
+              class="
+                md:text-6xl
+                lg:text-7xl
+                text-5xl
+                leading-[1]
+                text-[#2D4010]
+              "
+            >
+              WHY HAMZA
+            </h2>
+            <p
+              class="
+                text-[#2D4010]
+                lg:text-3xl
+                md:text-2xl
+                text-xl
+                leading-[0.5]
+              "
+            >
+              BEST LIVE AND COMMUNETY
+            </p>
+          </div>
+          <div
+            class="
+              flex flex-row
+              gap-x-5
+              bg-[#EFB456]
+              text-[#2D4010]
+              py-8
+              px-5
+              rounded-xl
+              justify-center
+              items-center
+            "
+          >
+            <img src="./assets/image/book.png" alt="" class="w-[56px]" />
+            <div class="text-left">
+              <h3 class="text-3xl font-bold">Developers Guide</h3>
+              <p class="font-bold">
+                Because we are a certified marketer of more than 100 real estate
+                developersBecause we are a certified marketer of more than 100
+                real estate developers
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="
+              flex flex-row
+              gap-x-5
+              bg-[#EFB456]
+              text-[#2D4010]
+              p-5
+              rounded-xl
+              justify-center
+              items-center
+            "
+          >
+            <img src="./assets/image/user-avatar.png" alt="" class="w-[56px]" />
+            <div class="text-left">
+              <h3 class="text-3xl font-bold">We care about you first</h3>
+              <p class="font-bold">
+                Because we are a certified marketer of more than 100 real estate
+                developersBecause we are a certified marketer of more than 100
+                real estate developers
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="
+              flex flex-row
+              gap-x-5
+              bg-[#EFB456]
+              text-[#2D4010]
+              p-5
+              rounded-xl
+              justify-center
+              items-center
+            "
+          >
+            <img src="./assets/image/percentage.png" alt="" class="w-[56px]" />
+            <div class="text-left">
+              <h3 class="text-3xl font-bold">0% COMMECSION</h3>
+              <p class="font-bold">
+                Because we are a certified marketer of more than 100 real estate
+                developersBecause we are a certified marketer of more than 100
+                real estate developers
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="
+              flex flex-row
+              gap-x-5
+              bg-[#EFB456]
+              text-[#2D4010]
+              p-5
+              rounded-xl
+              justify-center
+              items-center
+            "
+          >
+            <img src="./assets/image/tap.png" alt="" class="w-[56px]" />
+            <div class="text-left">
+              <h3 class="text-3xl font-bold">easy experience</h3>
+              <p class="font-bold">
+                Because we are a certified marketer of more than 100 real estate
+                developersBecause we are a certified marketer of more than 100
+                real estate developers
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!------------------------------------------------------------- End WHY HAMZA --------------------------------------------------------->
+
+    <!------------------------------------------------------------- Start PROPERTIES --------------------------------------------------------->
+    <section class="bg-main h-screen lg:h-96 overflow-hidden relative">
+      <img
+        src="./assets/image/Rectangle 223.png"
+        alt=""
+        class="top-0 left-0 absolute z-[-1]"
+      />
+      <article class="w-full h-1/3 mb-5 px-10 py-6">
+        <div class="text-white">
+          <h3 class="text-4xl">PROPERTIES</h3>
+          <span>LATEST LAUNCHES</span>
+          <hr class="w-1/3 mt-5" />
+        </div>
+      </article>
+      <div class="swiper3 mySwiper3">
+        <div class="swiper-wrapper px-2 lg:px-0">
+          <div class="swiper-slide flex-col bg-transparent text-white" style="align-items: flex-start;">
+            <img src="./assets/image/HOMESTYLE2_RAYA_AR3.png" alt="" />
+            <div class="flex flex-col" style="align-items: flex-start;">
+              <h4 class="text-sm">PROJECT NAME</h4>
+              <span class="text-xs">Developer | Arya | Property Type</span>
+              <span class="text-[8px]">654 SQ.FT / 60.76 SQ.M</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide flex-col bg-transparent text-white" style="align-items: flex-start;">
+            <img src="./assets/image/HOMESTYLE2_RAYA_AR3.png" alt="" />
+            <div class="flex flex-col" style="align-items: flex-start;">
+              <h4 class="text-sm">PROJECT NAME</h4>
+              <span class="text-xs">Developer | Arya | Property Type</span>
+              <span class="text-[8px]">654 SQ.FT / 60.76 SQ.M</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide flex-col bg-transparent text-white" style="align-items: flex-start;">
+            <img src="./assets/image/HOMESTYLE2_RAYA_AR3.png" alt="" />
+            <div class="flex flex-col" style="align-items: flex-start;">
+              <h4 class="text-sm">PROJECT NAME</h4>
+              <span class="text-xs">Developer | Arya | Property Type</span>
+              <span class="text-[8px]">654 SQ.FT / 60.76 SQ.M</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide flex-col bg-transparent text-white" style="align-items: flex-start;">
+            <img src="./assets/image/HOMESTYLE2_RAYA_AR3.png" alt="" />
+            <div class="flex flex-col" style="align-items: flex-start;">
+              <h4 class="text-sm">PROJECT NAME</h4>
+              <span class="text-xs">Developer | Arya | Property Type</span>
+              <span class="text-[8px]">654 SQ.FT / 60.76 SQ.M</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide flex-col bg-transparent text-white" style="align-items: flex-start;">
+            <img src="./assets/image/HOMESTYLE2_RAYA_AR3.png" alt="" />
+            <div class="flex flex-col" style="align-items: flex-start;">
+              <h4 class="text-sm">PROJECT NAME</h4>
+              <span class="text-xs">Developer | Arya | Property Type</span>
+              <span class="text-[8px]">654 SQ.FT / 60.76 SQ.M</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide flex-col bg-transparent text-white" style="align-items: flex-start;">
+            <img src="./assets/image/HOMESTYLE2_RAYA_AR3.png" alt="" />
+            <div class="flex flex-col" style="align-items: flex-start;">
+              <h4 class="text-sm">PROJECT NAME</h4>
+              <span class="text-xs">Developer | Arya | Property Type</span>
+              <span class="text-[8px]">654 SQ.FT / 60.76 SQ.M</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide flex-col bg-transparent text-white" style="align-items: flex-start;">
+            <img src="./assets/image/HOMESTYLE2_RAYA_AR3.png" alt="" />
+            <div class="flex flex-col" style="align-items: flex-start;">
+              <h4 class="text-sm">PROJECT NAME</h4>
+              <span class="text-xs">Developer | Arya | Property Type</span>
+              <span class="text-[8px]">654 SQ.FT / 60.76 SQ.M</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide flex-col bg-transparent text-white" style="align-items: flex-start;">
+            <img src="./assets/image/HOMESTYLE2_RAYA_AR3.png" alt="" />
+            <div class="flex flex-col" style="align-items: flex-start;">
+              <h4 class="text-sm">PROJECT NAME</h4>
+              <span class="text-xs">Developer | Arya | Property Type</span>
+              <span class="text-[8px]">654 SQ.FT / 60.76 SQ.M</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide flex-col bg-transparent text-white" style="align-items: flex-start;">
+            <img src="./assets/image/HOMESTYLE2_RAYA_AR3.png" alt="" />
+            <div class="flex flex-col" style="align-items: flex-start;">
+              <h4 class="text-sm">PROJECT NAME</h4>
+              <span class="text-xs">Developer | Arya | Property Type</span>
+              <span class="text-[8px]">654 SQ.FT / 60.76 SQ.M</span>
+            </div>
+          </div>
+        </div>
+        <div class=" absolute top-[10%] right-[10%] w-36 h-36">
+          <div
+            class="
+              swiper-button-next
+              absolute
+              border border-[#f2a71b]
+              rounded-lg
+              after:text-main
+            "
+            style="top: 15%; right: 5%; padding: 25px"
+          ></div>
+          <div
+            class="
+              swiper-button-prev
+              absolute
+              border border-[#f2a71b]
+              rounded-lg
+              after:text-main
+              p-6
+            "
+            style="top: 15%; right: 10%; padding: 25px"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------------------------------- End PROPERTIES --------------------------------------------------------->
+
+    <!------------------------------------------------------------- Start HAMZA LOCATION -------------------------------------------------->
+    <section class="relative bg-main">
+      <img
+        src="./assets/image/cairo-nile-view-sunset-photo-egypt.png"
+        alt=""
+        class="absloute top-0 left-0"
+      />
+
+      <div
+        class="
+          text-white
+          absolute
+          top-1/3
+          left-5
+          |
+          before:w-2
+          before:h-2
+          before:absolute
+          before:bg-white
+          before:rounded-full
+          before:top-5
+          before:left-1/2
+          before:-translate-x-1/2
+          |
+          after:w-[1px]
+          after:h-48
+          after:absolute
+          after:bg-white
+          after:rounded-full
+          after:top-5
+          after:left-1/2
+          after:-translate-x-1/2
+        "
+      >
+        CAIRO
+      </div>
+
+      <div
+        class="
+        top-2/3
+        left-3/4
+        after:h-32
+        after:top-5
+        after:left-1/2
+        after:-translate-x-1/2
+          location
+        "
+      >
+        CAIRO
+      </div>
+
+      <div
+        class="
+        top-2/3
+        left-3/4
+        before:top-5
+        after:top-5
+        after:left-1/2
+        after:-translate-x-1/2
+        before:-translate-x-1/2
+        before:left-1/2
+          text-white
+          absolute
+          |
+          before:w-2
+          before:h-2
+          before:absolute
+          before:bg-white
+          before:rounded-full
+          |
+          after:w-[1px]
+          after:h-32
+          after:absolute
+          after:bg-white
+          after:rounded-full
+        "
+      >
+        CAIRO
+      </div>
+
+      <div
+        class="
+          text-white
+          absolute
+          top-[30%]
+          left-3/4
+          |
+          before:w-2
+          before:h-2
+          before:absolute
+          before:bg-white
+          before:rounded-full
+          before:top-5
+          before:left-1/2
+          before:-translate-x-1/2
+          |
+          after:w-[1px]
+          after:h-32
+          after:absolute
+          after:bg-white
+          after:rounded-full
+          after:top-5
+          after:left-1/2
+          after:-translate-x-1/2
+        "
+      >
+        CAIRO
+      </div>
+
+      <div
+        class="
+          text-white
+          absolute
+          top-[30%]
+          left-[20%]
+          |
+          before:w-2
+          before:h-2
+          before:absolute
+          before:bg-white
+          before:rounded-full
+          before:top-5
+          before:left-1/2
+          before:-translate-x-1/2
+          |
+          after:w-[1px]
+          after:h-32
+          after:absolute
+          after:bg-white
+          after:rounded-full
+          after:top-5
+          after:left-1/2
+          after:-translate-x-1/2
+        "
+      >
+        CAIRO
+      </div>
+
+      <div
+        class="
+          text-white
+          absolute
+          top-3/4
+          left-1/2
+          |
+          before:w-2
+          before:h-2
+          before:absolute
+          before:bg-white
+          before:rounded-full
+          before:top-5
+          before:left-1/2
+          before:-translate-x-1/2
+          |
+          after:w-[1px]
+          after:h-36
+          after:absolute
+          after:bg-white
+          after:rounded-full
+          after:top-5
+          after:left-1/2
+          after:-translate-x-1/2
+        "
+      >
+        CAIRO
+      </div>
+    </section>
+    <!------------------------------------------------------------- END HAMZA LOCATION -------------------------------------------------->
+
+    <!------------------------------------------------------------- Start OUR DEVELOPERS -------------------------------------------------->
+    <section class="px-5 py-5 relative overflow-hidden text-black">
+      <article class="w-full h-1/3 mb-5 px-10 py-6">
+        <div class="text-[#2D4010]">
+          <h3 class="text-4xl">OUR DEVELOPERS</h3>
+          <span>What we’re good at</span>
+          <hr class="w-1/3 mt-5" />
+        </div>
+      </article>
+      <div class="swiper3 mySwiper3">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide flex-col bg-transparent text-white after:absolute after:w-[1px] after:h-12 after:-top-2 after:bg-gray-500 after:left-1/2 after:lg:left-full after:lg: " style="align-items: flex-start;"
+          >
+            <div class="text-black relative">
+              <i class="fa-brands fa-discord"></i>
+              <span>Placeholder</span>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide flex-col bg-transparent text-white after:absolute after:w-[1px] after:h-12 after:-top-2 after:bg-gray-500 after:left-1/2 after:lg:left-full after:lg: " style="align-items: flex-start;"
+          >
+            <div class="text-black relative">
+              <i class="fa-brands fa-discord"></i>
+              <span>Placeholder</span>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide flex-col bg-transparent text-white after:absolute after:w-[1px] after:h-12 after:-top-2 after:bg-gray-500 after:left-1/2 after:lg:left-full after:lg: " style="align-items: flex-start;"
+          >
+            <div class="text-black relative">
+              <i class="fa-brands fa-discord"></i>
+              <span>Placeholder</span>
+            </div>
+          </div>
+
+
+          <div
+            class="swiper-slide flex-col bg-transparent text-white after:absolute after:w-[1px] after:h-12 after:-top-2 after:bg-gray-500 after:left-1/2 after:lg:left-full after:lg: " style="align-items: flex-start;"
+          >
+            <div class="text-black relative">
+              <i class="fa-brands fa-discord"></i>
+              <span>Placeholder</span>
+            </div>
+          </div>
+
+
+
+          <div
+            class="swiper-slide flex-col bg-transparent text-white after:absolute after:w-[1px] after:h-12 after:-top-2 after:bg-gray-500 after:left-1/2 after:lg:left-full after:lg: " style="align-items: flex-start;"
+          >
+            <div class="text-black relative">
+              <i class="fa-brands fa-discord"></i>
+              <span>Placeholder</span>
+            </div>
+          </div>
+
+
+          <div
+            class="swiper-slide flex-col bg-transparent text-white after:absolute after:w-[1px] after:h-12 after:-top-2 after:bg-gray-500 after:left-1/2 after:lg:left-full after:lg: " style="align-items: flex-start;"
+          >
+            <div class="text-black relative">
+              <i class="fa-brands fa-discord"></i>
+              <span>Placeholder</span>
+            </div>
+          </div>
+
+
+          <div
+            class="swiper-slide flex-col bg-transparent text-white after:absolute after:w-[1px] after:h-12 after:-top-2 after:bg-gray-500 after:left-1/2 after:lg:left-full after:lg: " style="align-items: flex-start;"
+          >
+            <div class="text-black relative">
+              <i class="fa-brands fa-discord"></i>
+              <span>Placeholder</span>
+            </div>
+          </div>
+        </div>
+        <div class=" absolute top-[20%] lg:top-[10%] right-[1%] lg:right-[5%] w-36 h-36">
+               <div
+          class="swiper-button-next absolute border border-[#2D4010] after:text-[#2D4010] rounded-lg lg:z-[-20] z-10"
+          style="top: 15%; right: 5%; padding: 25px"
+        ></div>
+        <div
+          class="swiper-button-prev absolute border border-[#2D4010] after:text-[#2D4010] rounded-lg lg:z-[-20] z-10"
+          style="top: 15%; left: 10%; padding: 25px"
+        ></div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------- End OUR DEVELOPERS -------------------------------------------------->
+
+    <!------------------------------------------------------------- Start QUICK CONTACT -------------------------------------------------->
+
+    <section class="relative h-screen flex justify-center items-center">
+      <img
+        src="./assets/image/3d-rendering-modern-house.png"
+        alt=""
+        class="top-0 left-0 absolute w-full h-full z-[-2]"
+      />
+
+      <div
+        class="w-full h-full bg-[#44501dd1] absolute top-0 left-0 z-[-1]"
+      ></div>
+
+      <section class="w-2/3 flex">
+        <article class="relative w-full lg:block hidden">
+          <img
+            src="./assets/image/curly-haired-indian-businessman-talking-phone-front-car.png"
+            alt=""
+            class="top-0 left-0 w-full h-full relative z-0"
+          />
+          <div class="top-0 left-0 absolute bg-[#0000008a] w-full h-full"></div>
+          <div
+            class="
+              text-white
+              w-3/4
+              absolute
+              top-1/2
+              left-8
+              -translate-l-1/2
+              border
+              border-b-[1px]
+              border-white
+              border-l-0
+              border-r-0
+              border-t-0
+            "
+          >
+            <h3 class="text-4xl">QUICK CONTCAT</h3>
+            <p class="text-lg">GET YOUR TOUCH</p>
+          </div>
+        </article>
+        <article class="bg-white px-5 flex justify-start items-center w-full">
+          <div
+            class="
+              flex flex-col            w-full
+              py-5
+              px-10
+              gap-5
+              text-[#4C5A31]
+              font-bold
+            "
+            style="align-items: flex-start;"  
+          >
+            <div class="flex gap-2 flex-col items-start w-full q-input">
+              <label for="Name">Name</label>
+              <input type="text" class="input" />
+            </div>
+
+            <div
+              class="flex gap-3 flex-col items-start relative w-full q-input"
+            >
+              <label for="Name">Phone number</label>
+              <div class="absolute bottom-0 left-0 inline-block">
+                <img
+                  src="./assets/image/egypt.png"
+                  alt=""
+                  class="w-5 h-5 inline-block"
+                />
+                <span>|</span>
+                <span class="text-sm">+2</span>
+              </div>
+              <input type="text" class="input pl-[52px] text-sm" />
+            </div>
+            <div class="flex gap-2 flex-col items-start w-full q-input">
+              <label for="Name">Preferred Location</label>
+              <select
+                name="location"
+                id=""
+                class="text-sm input w-full text-[#4C5A31]"
+              >
+                <option value="new cairo">New Cairo</option>
+                <option value="october">October</option>
+                <option value="giza">Giza</option>
+              </select>
+            </div>
+            <div class="flex gap-2 flex-col items-start w-full q-input">
+              <label for="Name">Message</label>
+              <input type="text" class="input" />
+            </div>
+            <input
+              type="submit"
+              value="Send"
+              class="bg-[#F2A71B] py-1 w-1/3 rounded-xl text-black"
+            />
+          </div>
+        </article>
+      </section>
+    </section>
+    <!------------------------------------------------------------- END QUICK CONTACT -------------------------------------------------->
+
+    <!------------------------------------------------------------- Start Footer -------------------------------------------------->
+    <footer
+      class="
+        py-5
+        bg-main
+        border border-t-[15px] border-l-0 border-r-0 border-b-0 border-[#F2A71B]
+      "
+    >
+      <section
+        class="
+          container
+          |
+          m-auto
+          |
+          text-center
+          |
+          flex
+          lg:justify-around
+          gap-y-8
+          items-center
+          lg:flex-row
+          flex-col
+        "
+      >
+        <div class="lg:w-1/4 md:w-1/2 w-4/5">
+          <div class="relative flex flex-col ">
+            <img src="./assets/image/Group 474.png" alt="" class="w-3/4" />
+            <a
+              href="#"
+              class="
+                bottom-8
+                left-[80px]
+                font-bold
+                underline
+                text-[10px]
+                absolute
+                text-main
+              "
+              >FOLLOW US AND STAY CONNECTED</a
+            >
+
+            <div>
+              <a href="www.facebook.com" class="s-links"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="insta" class="s-links"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="twitter" class="s-links">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="li" class="s-links"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+
+            <hr class="bottom-0 left-0 absolute w-3/4 text-[#EBEFEA] mt-3" />
+          </div>
+
+          <h3 class="text-3xl capitalize text-start mt-4 font-bold text-white">
+            quick communication
+          </h3>
+
+          <div class="flex gap-2 text-start flex-wrap mt-2">
+            <div class="text-white">
+              <i class="fa-solid fa-phone s-links w-6 h-6 text-base mr-2"></i>
+              +2 0000 000 0000
+            </div>
+            <div class="text-white">
+              <i
+                class="fa-regular fa-envelope s-links w-6 h-6 text-base mr-2"
+              ></i>
+              info@hamza.com
+            </div>
+            <div class="text-white">
+              <i
+                class="fa-solid fa-location-dot s-links w-6 h-6 text-base mr-2"
+              ></i>
+              DAMAC Towers Riyadh South Tower Olaya District King Fahd Road
+            </div>
+          </div>
+        </div>
+        <div class="lg:px-10 px-0 lg:w-1/5 md:w-1/2 w-4/5">
+          <h3 class="text-3xl font-bold text-white mb-5 text-start">
+            QUICK links
+          </h3>
+          <ul class="text-start flex gap-y-2 lg:px-0 px-3 flex-col text-white font-bold">
+            <li class="q-links-footer"><a href="">HOME</a></li>
+            <li class="q-links-footer"><a href="">PROJECTS</a></li>
+            <li class="q-links-footer"><a href="">PURPOSE</a></li>
+            <li class="q-links-footer"><a href="">AREAS</a></li>
+            <li class="q-links-footer"><a href="">DEVELOPERS</a></li>
+            <li class="q-links-footer"><a href="">ABOUT</a></li>
+            <li class="q-links-footer"><a href="">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="lg:px-10 p-0 lg:w-1/5 md:w-1/2 w-4/5">
+          <h3 class="text-3xl font-bold text-white mb-5 text-start">AREAS</h3>
+          <ul class="text-start flex gap-y-2 flex-col text-white font-bold lg:px-0 px-3">
+            <li class="q-links-footer"><a href="">nEW cAIRO</a></li>
+            <li class="q-links-footer"><a href="">NASR CITY</a></li>
+            <li class="q-links-footer"><a href="">NEW CAPITAL</a></li>
+            <li class="q-links-footer"><a href="">NEW CAPITAL</a></li>
+            <li class="q-links-footer"><a href="">Alexandria</a></li>
+            <li class="q-links-footer"><a href="">Ain Sokhna</a></li>
+            <li class="q-links-footer"><a href="">Hurghada</a></li>
+          </ul>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-4/5">
+          <h3 class="text-3xl font-bold text-white mb-5 text-start">
+            PROPERTY TYPE
+          </h3>
+          <ul class="text-start flex gap-y-2 flex-col lg:px-0 px-3 text-white font-bold">
+            <li class="q-links-footer"><a href="">commercial</a></li>
+            <li class="q-links-footer"><a href="">Residential</a></li>
+            <li class="q-links-footer"><a href="">Administrative</a></li>
+            <li class="q-links-footer"><a href="">COASTAL</a></li>
+          </ul>
+          <div class="bg-[#1F2E07] p-5 w-full text-start mt-4 text-white">
+            <h3 class="text-2xl font-bold">NEWSLETTER</h3>
+            <p class="text-md capitalize">SIGN UP FOR THE LTEST NEWS</p>
+            <div class="relative">
+              <input
+                type="text"
+                class="bg-transparent w-full py-2 input"
+                placeholder="Insert your email"
+              />
+              <i class="fa-solid fa-chevron-right right-0 top-4 absolute"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!------------------------------------------------------------- End Footer -------------------------------------------------->
+
+    <!------------------------------------------------------------- Start Copyright -------------------------------------------------->
+
+    <section class="bg-[#F2A71B] px-2">
+      <section
+        class="
+          container
+          |
+          m-auto
+          |
+          flex
+          justify-between
+          text-[#2D4010]
+          py-5
+          items-center
+          font-bold
+        "
+      >
+        <div>
+          <div class="lg:text-xs text-[8px]">
+            © 2022 ALL COPY RIGHT RESERVED FOR HAMZA REALESTATE
+          </div>
+          <div class="lg:text-[10px] text-[6px]">
+            COMPANY REGISTRATION NUMBER: XXX00XXX | VAT REGISTRATION NUMBER:
+            22X2XXX2XXX
+          </div>
+        </div>
+        <div class="lg:text-xs text-[6px]">POWERD BY ADMOJO MARKETING</div>
+      </section>
+    </section>
+
+    <!------------------------------------------------------------- End Copyright -------------------------------------------------->
+
+    <!----------------------------------------------------------- Imoprt Swiper JS --------------------------------------------------------->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!------------------------------------------------------------ Main JS ----------------------------------------------------------------->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
